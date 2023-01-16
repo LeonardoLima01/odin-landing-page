@@ -1,5 +1,12 @@
+*{
+    font-family: Roboto, sans-serif;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
 body{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -11,18 +18,15 @@ body{
 .mid,
 .bot{
     flex: 1;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .footer{
-    flex: 0.5;
     display: flex;
+    margin-top: auto;
     justify-content: center;
     align-items: center;
     color: white;
+    padding: 15px;
 }
 
 .header,
@@ -32,12 +36,115 @@ body{
 
 .mid{
     background-color: #E5E7EB;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-basis: 0;
+}
+.call{
+    box-sizing: border-box;
+    background-color: #3882f6;
+    border-radius: 10px;
+    margin: 90px 370px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 60px;
+    flex: 1;
 }
 
-.call{
+.bot{
+    box-sizing: border-box;
     display: flex;
-    background-color: dodgerblue;
+}
+
+.text{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.sub-text{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.btn button{
+    background-color: #3882f6;
+    color: white;
+    border-color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 175px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.quote{
+    box-sizing: border-box;
+    font-size: 36px;
+    width: 1000px;
+    color: #1F2937;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px;
+    font-weight: 100;
+}
+.author{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.top{
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 15px;
+    padding: 30px;
+}
+
+.title{
+    align-self: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box{
+    border: 3px solid #3882f6;
+    padding: 70px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.description{
+    width: 150px;
+    text-align: center;
+}
+
+.header{
+    padding: 100px;
+}
+
+.boxes{
+    display: flex;
     flex: 1;
+    flex-direction: row;
+    width: 600px;
+    gap: 55px;
+    justify-content: center;
+    align-items: center;
 }
